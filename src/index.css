@@ -2,8 +2,8 @@
   margin: 0;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  /* Default = light mode */
-  color-scheme: light dark;
+  color-scheme: light;
+  color: rgba(0, 0, 0, 0.87);
   background-color: #f5f5dc;
   background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 
@@ -12,6 +12,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 body {
   font-family: "Handlee", cursive;
@@ -27,21 +28,8 @@ button,
 input,
 select,
 textarea {
+  background-color: black;
   font-family: inherit;
   color: white;
   outline: none;
-}
-
-/* Dark mode overrides */
-@media (prefers-color-scheme: dark) {
-  :root {
-    background-color: #f5f5dc;
-    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
-    color: #f5f5f5; 
-  }
-
-  button {
-    background-color: #333;
-    color: #f5f5f5;
-  }
 }
