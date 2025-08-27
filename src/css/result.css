@@ -1,0 +1,28 @@
+.result-container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+  }
+  
+  .result-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .result-image {
+    width: 154px;
+    height: 244px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .retry-button {
+    padding: 5px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
