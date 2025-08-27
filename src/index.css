@@ -38,6 +38,6 @@ input,
 select,
 textarea {
   font-family: inherit;
-  color: "white";
+  color: white;
   outline: none;
 }

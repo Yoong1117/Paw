@@ -191,7 +191,7 @@ const CardComponent = ({
 
   // Drag logic
   const handleDragEnd = () => {
-    const threshold = 100;
+    const threshold = 30;
     const xValue = x.get();
     if (Math.abs(xValue) > threshold) {
       const dir = xValue > 0 ? "right" : "left";
