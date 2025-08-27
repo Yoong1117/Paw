@@ -1,16 +1,11 @@
-:root,
-html,
-body {
+:root {
   margin: 0;
-  height: 100%;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
-  /* Force light theme everywhere */
-  color-scheme: only light;
-
-  /* Explicit background on all root elements */
-  background-color: #f5f5dc !important; /* force override dark mode */
-  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png") !important;
+  /* Default = light mode */
+  color-scheme: light dark;
+  background-color: #f5f5dc;
+  background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,28 +14,13 @@ body {
 }
 
 body {
-  min-height: 100vh;
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
-  margin: 0;
 }
 
-/* Reset default button styles on mobile browsers */
 button {
-  appearance: none;
-  -webkit-appearance: none;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 8px;
-
-  background-color: black; /* your custom color */
-  color: white;
-  cursor: pointer;
-}
-
-button:active {
-  opacity: 0.8; /* nice tap feedback */
+  background-color: black;
 }
 
 button,
@@ -50,4 +30,18 @@ textarea {
   font-family: inherit;
   color: white;
   outline: none;
+}
+
+/* Dark mode overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #f5f5dc;
+    background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+    color: #f5f5f5; 
+  }
+
+  button {
+    background-color: #333;
+    color: #f5f5f5;
+  }
 }
