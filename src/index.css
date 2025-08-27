@@ -1,8 +1,14 @@
-:root {
+:root,
+html,
+body {
   margin: 0;
+  height: 100%;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
+  /* Force light mode */
   color-scheme: light;
+
+  /* Explicit background on all root elements */
   background-color: #f5f5dc;
   background-image: url("https://www.transparenttextures.com/patterns/paper-fibers.png");
 
@@ -13,9 +19,15 @@
 }
 
 body {
+  min-height: 100vh; /* ensure background always covers screen */
   font-family: "Handlee", cursive;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+}
+
+button {
+  background-color: black;
 }
 
 button,
