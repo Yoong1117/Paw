@@ -35,7 +35,7 @@ const SwipeCards = ({ onFinished }: Prop) => {
 
       // floating emoji
       const emoji = dir === "left" ? "💔" : "❤️";
-      const offset = Math.random() * 250;
+      const offset = Math.random() * 80 - 40;
       setFloatingEmojis((prev) => [
         ...prev,
         { id: Date.now() + Math.random(), emoji, x: offset, y: 0 },
@@ -105,7 +105,7 @@ const SwipeCards = ({ onFinished }: Prop) => {
           transition={{ duration: 1, ease: "easeOut" }}
           style={{
             position: "absolute",
-            left: "10%",
+            left: "50%",
             top: "10%",
             fontSize: "32px",
             pointerEvents: "none",
